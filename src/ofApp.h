@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofPalette.h"
 #include "ofPendulum.h"
 
 class ofApp : public ofBaseApp{
@@ -21,6 +22,10 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-
+    
+    ofPalette palette;
+    ofPalette paletteDay;
+    ofPalette paletteNight;
+    
     vector<ofPendulum> pendulums;
 };
